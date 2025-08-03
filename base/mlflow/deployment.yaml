@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mlflow
+  namespace: mlflow
   labels:
     app: mlflow
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
         - name: mlflow
-          image: mlflow/mlflow:2.5.0
+          image: ghcr.io/mlflow/mlflow:2.5.0
           args:
             - server
             - --host
