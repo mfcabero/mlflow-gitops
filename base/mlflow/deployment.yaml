@@ -19,7 +19,7 @@ spec:
         - name: mlflow
           image: ghcr.io/mlflow/mlflow:latest
           command: ["python3"]
-          args: ["-m", "mlflow", "server", "--host", "0.0.0.0", "--port", "5000"]
+          args: ["-m", "mlflow", "server", "--host", "0.0.0.0", "--port", "6000"]
           ports:
             - containerPort: 5000
           volumeMounts:
