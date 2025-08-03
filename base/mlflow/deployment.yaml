@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: mlflow
-          image: ghcr.io/mlflow/mlflow:2.5.0
+          image: ghcr.io/mlflow/mlflow:latest
           args:
             - server
             - --host
